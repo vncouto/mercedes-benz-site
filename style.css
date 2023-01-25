@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@font-face {
+    font-family: corporate-a-bold, 'Times New Roman', Times, serif;
+    font-family: corporate-a-light, 'Times New Roman', Times, serif;
+    src: url(fonte/corporate-a-bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+}
+
+header div.upside-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+header div.upside-header a img.mb-logo {
+    width: 60px;
+}
+
+header div.upside-header img.search-logo {
+    width: 30px;
+}
+
+header div.upside-header p {
+    color: white;
+    font-family: corporate-a-light, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+}
+
+header div.upside-header a {
+    text-decoration: none;    
+}
+
+header div.botside-header {
+    padding: 10px;
+}
+
+header div.botside-header nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px 25px;
+}
+
+@media (max-width: 770px) {
+    header div.botside-header nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+header div.botside-header nav button {
+    padding: 5px;
+    background-color: black;
+    color: darkgray;
+    font-size: 1.2em;
+    font-family: corporate-a-light, 'Times New Roman', Times, serif;
+    border: none;
+}
+
+header div.botside-header nav button:hover {
+    color: white;
+    cursor: pointer;
+}
